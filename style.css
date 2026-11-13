@@ -160,3 +160,40 @@ main img{cursor:zoom-in}
  .pr-top,.pr-grid{grid-template-columns:1fr}
  .stamp-wrap{width:min(100%,240px)}
 }
+
+.gallery .pixel-banner {
+  grid-column: 1 / -1;
+  justify-self: start;
+  position: relative;
+  display: block;
+  margin: 16px 4px 8px;
+  padding: 14px 28px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5c2749 !important;
+  background: #ff3470 !important;
+  border: 0;
+  
+  box-shadow:
+    inset 0 4px 0 #ff6b9a,
+    inset 0 -4px 0 #f0144c,
+    0 -4px 0 0 #5c2749,
+    0 4px 0 0 #5c2749,
+    -4px 0 0 0 #5c2749,
+    4px 0 0 0 #5c2749;
+}
+
+.gallery .pixel-banner::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+}
+
+.gallery .pixel-banner:first-child { margin-top: 0; }
